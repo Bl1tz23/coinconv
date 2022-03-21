@@ -1,0 +1,17 @@
+# github.com/caarlos0/env v3.5.0+incompatible
+## explicit
+github.com/caarlos0/env
+# github.com/cpuguy83/go-md2man/v2 v2.0.1
+## explicit; go 1.11
+github.com/cpuguy83/go-md2man/v2/md2man
+# github.com/russross/blackfriday/v2 v2.1.0
+## explicit
+github.com/russross/blackfriday/v2
+# github.com/shopspring/decimal v1.3.1
+## explicit; go 1.13
+github.com/shopspring/decimal
+# github.com/stretchr/testify v1.7.1
+## explicit; go 1.13
+# github.com/urfave/cli/v2 v2.4.0
+## explicit; go 1.11
+github.com/urfave/cli/v2
