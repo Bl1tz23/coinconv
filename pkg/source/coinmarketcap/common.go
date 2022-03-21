@@ -47,15 +47,13 @@ func checkResponse(res *http.Response) error {
 	}
 	defer res.Body.Close()
 
-	status := Status{}
-	err = json.Unmarshal(b, &status)
+	e := CommonError{}
+	err = json.Unmarshal(b, &e)
 	if err != nil {
 		return fmt.Errorf("failed to unmarhsal error response body, err: %w, body: %s", err, b)
 	}
 
-	return &CommonError{
-		status,
-	}
+	return &e
 }
 
 func String(s string) *string {
