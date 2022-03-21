@@ -38,8 +38,7 @@ var (
 		Description: `Coinconv is a converter for currencies from specified source.
 Required environment variables: 
 1. COINCONV_SOURCE (available values: coinmarketcap, default: coinmarketcap)
-2. COINCONV_API_KEY
-3. SANDBOX (default: true)`,
+2. COINCONV_API_KEY`,
 		UsageText: "--amount AMOUNT [ --from-fiat | --from-crypto ] (required for coinmarketcap) SYMBOL [ --to-fiat | --to-crypto ] (required for coinmarketcap) SYMBOL",
 		Flags: []cli.Flag{
 			// TODO: create an issue

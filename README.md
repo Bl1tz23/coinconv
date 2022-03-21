@@ -14,7 +14,6 @@ DESCRIPTION:
    Required environment variables: 
    1. COINCONV_SOURCE (available values: coinmarketcap, default: coinmarketcap)
    2. COINCONV_API_KEY
-   3. SANDBOX (default: true)
 
 COMMANDS:
    help, h  Shows a list of commands or help for one command
