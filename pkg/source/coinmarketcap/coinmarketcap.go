@@ -137,6 +137,7 @@ func (c *Coinmarketcap) do(req *http.Request) ([]byte, error) {
 	if err != nil {
 		return nil, fmt.Errorf("failed to read response body: %w", err)
 	}
+	defer res.Body.Close()
 
 	return b, nil
 }
