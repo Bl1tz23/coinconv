@@ -1,4 +1,4 @@
-module interview
+module github.com/Bl1tz23/coinconv
 
 go 1.17
 

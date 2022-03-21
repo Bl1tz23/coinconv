@@ -8,7 +8,7 @@ import (
 	"net/url"
 	"strconv"
 
-	xhttp "interview/pkg/util/http"
+	xhttp "github.com/Bl1tz23/coinconv/pkg/util/http"
 )
 
 const (

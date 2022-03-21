@@ -7,9 +7,9 @@ import (
 	"os"
 	"time"
 
-	"interview/internal/conversion"
-	"interview/pkg/source/coinmarketcap"
-	xhttp "interview/pkg/util/http"
+	"github.com/Bl1tz23/coinconv/internal/conversion"
+	"github.com/Bl1tz23/coinconv/pkg/source/coinmarketcap"
+	xhttp "github.com/Bl1tz23/coinconv/pkg/util/http"
 
 	"github.com/caarlos0/env"
 	"github.com/urfave/cli/v2"
@@ -49,27 +49,27 @@ Required environment variables:
 				Destination: &amountStr,
 				Required:    true,
 				Name:        flagAmount,
-				Usage:       "indicates that 'from' symbol refers to fiat currency",
+				Usage:       "amount of currency to convert",
 			},
 			&cli.StringFlag{
 				Destination: &fromSymbol,
 				Name:        flagFromFiat,
-				Usage:       "indicates that 'from' symbol refers to fiat currency",
+				Usage:       "indicates 'from' symbol which refers to fiat currency",
 			},
 			&cli.StringFlag{
 				Destination: &fromSymbol,
 				Name:        flagFromCrypto,
-				Usage:       "indicates that 'from' symbol refers to cryptocurrency",
+				Usage:       "indicates 'from' symbol which refers to cryptocurrency",
 			},
 			&cli.StringFlag{
 				Destination: &toSymbol,
 				Name:        flagToFiat,
-				Usage:       "indicates that 'to' symbol refers to fiat currency",
+				Usage:       "indicates 'to' symbol which refers to fiat currency",
 			},
 			&cli.StringFlag{
 				Destination: &toSymbol,
 				Name:        flagToCrypto,
-				Usage:       "indicates that 'to' symbol refers to cryptocurrency",
+				Usage:       "indicates 'to' symbol which refers to cryptocurrency",
 			},
 		},
 		Before: func(c *cli.Context) error {
